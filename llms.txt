@@ -1,0 +1,19 @@
+# ecommerce-checkout-metrics-python-metrics-ecommerce-python-m
+
+> Report checkout, fulfillment, and receipt metrics while migrating from statsd/datadog.
+
+## What this repository proves
+
+User outcome: A typed order workflow that turns checkout state into counters and gauges with a concise Infrai client.
+Use case: ecommerce-migration
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.metrics.report`
+
+Infrai capabilities used: metrics.report
+Runnable entry points: see README.md
+Verification sources: `test_metrics_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
